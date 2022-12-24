@@ -18,7 +18,7 @@ function download(file, text) {
 
 function shareToWhatsApp(imageURL) {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        window.open('whatsapp://send?text=https://mndpsi.github.io Latest photos to share: '+imageURL + " ")
+        window.open('whatsapp://send?text=https://mndpsi.github.io Latest photos to share: '+imageURL);
     } else {
       window.open('https://web.whatsapp.com://send?text='+encodeURIComponent(imageURL));  
     }
