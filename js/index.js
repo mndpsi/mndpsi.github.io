@@ -15,3 +15,11 @@ function download(file, text) {
  
     document.body.removeChild(element);
 }
+
+function shareToWhatsApp(imageURL) {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        window.open('whatsapp://send?text='+encodeURIComponent(imageURL))
+    } else {
+      window.open('https://web.whatsapp.com://send?text='+encodeURIComponent(imageURL));  
+    }
+}
