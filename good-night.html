@@ -108,38 +108,8 @@
 
   <div class="album py-5 bg-light">
     <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
-        <!-- Image section -->
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="images/new_year/1-ballon-on-white-wall-for-new-year.jpg" alt="Beautiful new year image with white wall and ballon on it."> </img>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-lg btn-outline-secondary" onclick="shareToWhatsApp('https://mndpsi.github.io/images/new_year/1-ballon-on-white-wall-for-new-year.jpg')"><img src="icons/whatsapp.png" alt="Share in whatsapp"></button>
-               
-                  <button type="button" class="btn btn-lg btn-primary" onclick="download('images/new_year/1-ballon-on-white-wall-for-new-year.jpg', '1-ballon-on-white-wall-for-new-year.jpg')" >Download</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-         <!-- Image section -->
-       <!-- Image section -->
-       <div class="col">
-        <div class="card shadow-sm">
-          <img src="images/new_year/2-yellow-flower-on-table-with-fruits.jpg" alt="Yellow flower on table with white fruits image for new year."> </img>
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-lg btn-outline-secondary" onclick="shareToWhatsApp('https://mndpsi.github.io/images/new_year/2-yellow-flower-on-table-with-fruits.jpg')"><img src="icons/whatsapp.png" alt="Share in whatsapp"></button>
-             
-                <button type="button" class="btn btn-lg btn-primary" onclick="download('images/new_year/2-yellow-flower-on-table-with-fruits.jpg', '2-yellow-flower-on-table-with-fruits.jpg')" >Download</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3" id="images_section">
+        
        <!-- Image section -->
       </div>
     </div>
@@ -157,6 +127,20 @@
   </div>
 </footer>
 
+
+<script>
+  loadImagesFrom('new_year', "1.jpg", "Beautiful new year image with white wall and ballon on it.");
+  loadImagesFrom('new_year', "2.jpg", "Yellow flower on table with white fruits image for new year.");
+  loadImagesFrom('new_year', "3.jpg", "Happy new year written on white wall and black board.");
+  loadImagesFrom('new_year', "4.jpg", "Beautiful new year image with white wall and ballon on it.");
+  loadImagesFrom('new_year', "5.jpg", "Happy new year crackers in the sky with white, red and blue colors");
+  loadImagesFrom('new_year', "6.jpg", "Beautiful new year image with white wall and ballon on it.");
+  loadImagesFrom('new_year', "7.jpg", "Happy new year text in white plate with spoon");
+  loadImagesFrom('new_year', "8.jpg", "Ballon on white wall and bottle");
+  loadImagesFrom('new_year', "9.jpg", "New year text on tree board with watch hanging");
+  loadImagesFrom('new_year', "10.jpg", "Crackers in the sky with blue, red and white waves");
+
+</script>
 
   </body>
 </html>

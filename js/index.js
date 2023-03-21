@@ -1,3 +1,5 @@
+
+
 function download(file, text) {
              
     //creating an invisible element
@@ -22,4 +24,24 @@ function shareToWhatsApp(imageURL) {
     } else {
       window.open('https://web.whatsapp.com://send?text=https://mndpsi.github.io Latest photos to share: '+imageURL);  
     }
+}
+
+
+function loadImagesFrom(folder, name, alt) {
+
+        let imageTemplate = `<div class="col">
+        <div class="card shadow-sm">
+          <img src="images/`+folder+`/`+name+`" alt="`+alt+`"> </img>
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-lg btn-outline-secondary" onclick="shareToWhatsApp('https://mndpsi.github.io/images/`+folder+`/`+name+`')"><img src="icons/whatsapp.png" alt="Share in whatsapp"></button>
+             
+                <button type="button" class="btn btn-lg btn-primary" onclick="download('images/`+folder+`/`+name+`', '`+name+`')" >Download</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`
+ document.getElementById('images_section').insertAdjacentHTML('beforeend', imageTemplate);
 }
